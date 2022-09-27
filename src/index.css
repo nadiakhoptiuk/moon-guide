@@ -1,15 +1,37 @@
-@import-normalize; /* bring in normalize.css styles */
+html {
+  --background-primary: linear-gradient(99.36deg, #f24f9b 0%, #ae2182 100%);
+  --background-secondary: linear-gradient(
+    149.06deg,
+    rgba(118, 118, 118, 0.525) 0%,
+    rgba(79, 79, 79, 0.45) 100%
+  );
+  --background-for-input: rgba(255, 255, 255, 0.5);
+  --background-for-picker: rgba(255, 255, 255, 0.2);
+
+  --main-text-color: #fff;
+  --secondary-text-color: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-primary-color);
+  color: var(--main-text-color);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
 }

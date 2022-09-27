@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  margin: 0 0 0 5px;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 24px;
+  line-height: 1.21;
+}
+
+@media screen and (min-width: 1440px) {
+  .logoText {
+    font-size: 34px;
+  }
+}

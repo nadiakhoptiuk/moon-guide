@@ -1,0 +1,68 @@
+.form {
+  width: 100%;
+  max-width: 386px;
+  padding: 0 22px;
+  margin: 0 auto 34px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .form {
+    padding: 0;
+    width: 386px;
+    margin-bottom: 100px;
+  }
+}
+
+.input {
+  width: 100%;
+  height: 44px;
+  padding: 12px 13px 13px 41px;
+  font-family: inherit;
+  background-color: var(--background-for-input);
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    height: 56px;
+    padding: 16px 16px 16px 81px;
+    font-size: 20px;
+    line-height: 1.15;
+  }
+}
+
+.input[type='date']::-webkit-inner-spin-button,
+.input[type='date']::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.input::placeholder {
+  color: var(--secondary-text-color);
+}
+
+.label {
+  position: relative;
+}
+
+.label:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.picker {
+  position: absolute;
+  width: 335px !important;
+  left: -15px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--background-for-picker);
+}
+
+.react-date-picker__wrapper {
+  border: none !important;
+}

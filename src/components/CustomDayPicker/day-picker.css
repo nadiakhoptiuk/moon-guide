@@ -1,0 +1,85 @@
+.rdp {
+  margin: 0;
+  padding: 0px;
+
+  background-color: var(--background-for-picker);
+  border-radius: 15px;
+}
+
+.rdp-month.rdp-caption_start.rdp-caption_end {
+  width: 100%;
+}
+
+.rdp-months {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rdp-table {
+  width: calc(100% - 20px);
+  max-width: 100%;
+  margin: 10px;
+  border-color: var(--main-text-color);
+  border-collapse: collapse !important;
+}
+
+.rdp-tbody {
+  border: 1px solid var(--main-text-color);
+  border-collapse: 1px solid var(--main-text-color) collapse !important;
+}
+
+.rdp-row {
+  border: 1px solid var(--main-text-color);
+  border-collapse: collapse;
+}
+
+.rdp-cell {
+  border: 1px solid var(--main-text-color);
+}
+
+.rdp-cell:hover {
+  background-color: var(--background-for-input);
+}
+
+.rdp-cell button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.2;
+  border-radius: 0;
+}
+
+.rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+  background-color: transparent;
+}
+
+.rdp-caption {
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 0 5px;
+  background-color: var(--background-for-picker);
+}
+
+.rdp-caption__label {
+  position: absolute !important;
+  left: 50%;
+}
+
+.rdp-nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rdp-nav__button_previous {
+  position: absolute;
+  left: 0;
+}
