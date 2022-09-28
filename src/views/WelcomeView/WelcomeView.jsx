@@ -10,7 +10,7 @@ export default function WelcomeView() {
 
   return (
     <section className={s.section}>
-      <div className="container">
+      <div className={s.container}>
         <Logo />
 
         <p className={s.welcomeText}>
