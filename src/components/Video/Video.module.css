@@ -1,0 +1,18 @@
+.video {
+  display: block;
+  width: 110%;
+  height: 120%;
+  object-fit: fill;
+  object-position: -15px -25px;
+}
+
+.videoWrapper {
+  margin: 0 auto;
+  width: 250px;
+  height: 230px;
+
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.79);
+  border-radius: 50%;
+  box-shadow: 0px 0px 45px 15px rgba(0, 0, 0, 0.89);
+}
