@@ -11,6 +11,7 @@ import s from './BirthdayMoonView.module.css';
 export default function BirthdayMoonView() {
   const [formattedBirthDate, setFormattedBirthDate] = useState('');
   const [moonPhase, setMoonPhase] = useState('');
+  const [isDatePikerShown, setIsDatePikerShown] = useState(false);
   const userBirthDate = useSelector(birthDateSelector);
 
   useEffect(() => {
@@ -29,10 +30,20 @@ export default function BirthdayMoonView() {
   return (
     <>
       <div className={s.moonViewWrapper}>
-        <h1 className={s.pageTitle}>Your Birthday Moon</h1>
-        <Video />
+        <div
+          className={
+            isDatePikerShown ? s.moonAndTitleWrapperBlur : s.moonAndTitleWrapper
+          }
+        >
+          <h1 className={s.pageTitle}>Your Birthday Moon</h1>
+          <Video />
+        </div>
 
-        <BirthdateMoonControls formattedBirthDate={formattedBirthDate} />
+        <BirthdateMoonControls
+          formattedBirthDate={formattedBirthDate}
+          isDatePikerShown={isDatePikerShown}
+          setIsDatePikerShown={setIsDatePikerShown}
+        />
         <BirthdateInfo moonPhase={moonPhase} />
       </div>
     </>

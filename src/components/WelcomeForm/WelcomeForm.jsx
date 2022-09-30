@@ -27,6 +27,7 @@ export default function Form() {
           className={s.input}
           placeholder={'Name'}
           // onChange={setName}
+          readOnly
         />
         <Icon
           iconId="user-icon"
@@ -45,6 +46,7 @@ export default function Form() {
           className={s.input}
           placeholder={'Birthdate'}
           // onChange={setBirthdate}
+          readOnly
         />
 
         <Icon

@@ -71,6 +71,12 @@
   cursor: pointer;
 }
 
+.customDatePicker {
+  position: absolute;
+  right: 0;
+  top: -310px;
+}
+
 .soundBtn {
   width: 50px;
   height: 40px;

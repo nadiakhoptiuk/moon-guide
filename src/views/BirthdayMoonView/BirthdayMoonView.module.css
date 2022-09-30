@@ -4,6 +4,10 @@
   overflow: hidden;
 }
 
+.moonAndTitleWrapperBlur {
+  filter: blur(10px);
+}
+
 .pageTitle {
   width: 269px;
   margin: 24px auto 0 auto;

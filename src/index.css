@@ -7,6 +7,7 @@ html {
   );
   --background-for-input: rgba(255, 255, 255, 0.5);
   --background-for-picker: rgba(255, 255, 255, 0.2);
+  --rdp-accent-color-custom: #ae2182;
 
   --main-text-color: #fff;
   --secondary-text-color: rgba(0, 0, 0, 0.7);
