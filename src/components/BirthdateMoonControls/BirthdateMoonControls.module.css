@@ -1,0 +1,80 @@
+.dateWrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dateWrapper::after {
+  position: absolute;
+  bottom: 4px;
+  content: '';
+  width: 100%;
+  height: 1px;
+
+  background-color: #fff;
+}
+
+.birthdate {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.btnWrapper {
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.datePicker {
+  position: relative;
+  width: 50px;
+  height: 40px;
+  margin-right: 20px;
+  z-index: 2;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: transparent;
+}
+
+.datePicker:hover:not([disabled]) {
+  background-color: transparent;
+}
+
+.datePicker:focus,
+.datePicker:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+.datePicker[type='date']::-webkit-inner-spin-button,
+.datePicker[type='date']::-webkit-calendar-picker-indicator {
+  width: 50px;
+  opacity: 0;
+  -webkit-appearance: none;
+}
+
+.datePickerIcon {
+  position: absolute;
+  left: 10px;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.datePickerIcon:hover {
+  cursor: pointer;
+}
+
+.soundBtn {
+  width: 50px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
