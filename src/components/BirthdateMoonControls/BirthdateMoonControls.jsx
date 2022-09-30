@@ -1,7 +1,7 @@
 import CustomDayPicker from 'components/CustomDayPicker';
 import Icon from 'components/Icon';
 import moment from 'moment';
-import { CSSTransition } from 'react-transition-group';
+// import { CSSTransition } from 'react-transition-group';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setBirthDate } from 'redux/birthDateReducer/birthDateSlice';

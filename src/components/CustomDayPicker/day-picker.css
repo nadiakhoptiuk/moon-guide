@@ -45,7 +45,7 @@
 .rdp-cell button {
   display: flex;
   align-items: flex-start;
-  justify-content: start;
+  justify-content: flex-start;
   margin: 0 auto;
   width: 100%;
   height: 100%;
