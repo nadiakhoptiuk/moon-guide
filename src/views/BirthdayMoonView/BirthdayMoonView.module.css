@@ -41,7 +41,7 @@
     height: auto;
     padding: 51px 0;
     /* transition: filter 50ms linear; */
-    /* filter: blur(50px); */
+    filter: none;
   }
 
   .pageTitle {

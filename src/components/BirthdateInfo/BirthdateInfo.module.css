@@ -33,11 +33,15 @@
     margin: 0 auto;
     /* height: calc(100vh - 490px); */
     overflow-y: scroll;
-
   }
 
   .birthdateDesc {
     width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.14;
     flex-grow: 1;
   }
 }
