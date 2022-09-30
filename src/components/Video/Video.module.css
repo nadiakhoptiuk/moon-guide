@@ -9,3 +9,11 @@
   max-width: 350px;
   margin: 0 auto;
 }
+
+@media screen and (min-width: 1024px) {
+  .video {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+  }
+}

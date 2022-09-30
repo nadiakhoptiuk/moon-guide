@@ -1,9 +1,13 @@
+import Icon from 'components/Icon';
 import Logo from 'components/Logo';
 import { NavLink, Outlet } from 'react-router-dom';
 import routes from '../../utils/routes';
 import s from './SharedLayout.module.css';
 
 export default function SharedLayout() {
+  const innerWidth = window.innerWidth;
+  const device = innerWidth < 1024 ? 'mobile' : 'desktop';
+
   return (
     <>
       <div className="page-wrapper">
@@ -22,6 +26,14 @@ export default function SharedLayout() {
                     return isActive ? 'activeNavLink' : 'navLink';
                   }}
                 >
+                  {device === 'desktop' ? (
+                    <Icon
+                      iconId="birth-moon-icon"
+                      width={53}
+                      height={53}
+                      className={s.navIcon}
+                    />
+                  ) : null}
                   Birthday Moon
                 </NavLink>
               </li>
@@ -33,6 +45,14 @@ export default function SharedLayout() {
                     return isActive ? 'activeNavLink' : 'navLink';
                   }}
                 >
+                  {device === 'desktop' ? (
+                    <Icon
+                      iconId="moon-online-icon"
+                      width={53}
+                      height={53}
+                      className={s.navIcon}
+                    />
+                  ) : null}
                   Moon online
                 </NavLink>
               </li>
@@ -44,6 +64,14 @@ export default function SharedLayout() {
                     return isActive ? 'activeNavLink' : 'navLink';
                   }}
                 >
+                  {device === 'desktop' ? (
+                    <Icon
+                      iconId="ritual-icon"
+                      width={53}
+                      height={53}
+                      className={s.navIcon}
+                    />
+                  ) : null}
                   Your ritual
                 </NavLink>
               </li>

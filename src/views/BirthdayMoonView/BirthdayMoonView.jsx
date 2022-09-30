@@ -37,10 +37,12 @@ export default function BirthdayMoonView() {
           }
         >
           <h1 className={s.pageTitle}>Your Birthday Moon</h1>
-          <Video />
         </div>
 
         <div className={s.infoWrapper}>
+          <div className={s.videoWrapper}>
+            <Video />
+          </div>
           <BirthdateMoonControls
             formattedBirthDate={formattedBirthDate}
             isDatePikerShown={isDatePikerShown}

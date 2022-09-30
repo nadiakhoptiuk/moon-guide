@@ -29,3 +29,42 @@
   max-width: 480px;
   margin: 0 auto;
 }
+
+@media screen and (min-width: 1024px) {
+  .moonAndTitleWrapper {
+    height: auto;
+    padding: 51px 0;
+    /* transition: filter 50ms linear; */
+  }
+
+  .moonAndTitleWrapperBlur {
+    height: auto;
+    padding: 51px 0;
+    /* transition: filter 50ms linear; */
+    /* filter: blur(50px); */
+  }
+
+  .pageTitle {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 48px;
+    line-height: 1.23;
+  }
+
+  .videoWrapper {
+    position: relative;
+    width: 282px;
+    height: 232px;
+    flex-shrink: 0;
+    float: right;
+    margin-right: 15px;
+  }
+
+  .infoWrapper {
+    display: flex;
+    padding: 0 21px;
+    width: 834px;
+    max-width: 834px;
+    margin: 0 auto;
+  }
+}

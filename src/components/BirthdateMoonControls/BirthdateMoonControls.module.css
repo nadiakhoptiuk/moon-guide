@@ -107,3 +107,15 @@
   border: none;
   cursor: pointer;
 }
+
+@media screen and (min-width: 1024px) {
+  .dateWrapper {
+    width: 285px;
+    position: absolute;
+    top: 460px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}

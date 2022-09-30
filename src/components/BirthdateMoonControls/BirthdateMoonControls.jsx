@@ -54,14 +54,12 @@ export default function BirthdateMoonControls({
           />
 
           {isDatePikerShown ? (
-            // <CSSTransition timeout={300} classNames={{ ...s }}>
             <CustomDayPicker
               selected={date}
               className={s.customDatePicker}
               onSelect={handleDateChange}
             />
-          ) : // </CSSTransition>
-          null}
+          ) : null}
 
           <button className={s.soundBtn}>
             <Icon iconId="sound-on-off-icon" width={38} height={27} />
