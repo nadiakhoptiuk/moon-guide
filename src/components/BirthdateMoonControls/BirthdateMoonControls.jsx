@@ -1,10 +1,10 @@
 import CustomDayPicker from 'components/CustomDayPicker';
 import Icon from 'components/Icon';
 import moment from 'moment';
-import { useCallback, useEffect, useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setBirthDate } from 'redux/birthDateReducer/birthDateSlice';
-// import { setBirthDate } from 'redux/birthDateReducer/birthDateSlice';
 import { birthDateSelector } from 'redux/birthDateReducer/birthDateSliceSelector';
 import s from './BirthdateMoonControls.module.css';
 
@@ -54,12 +54,14 @@ export default function BirthdateMoonControls({
           />
 
           {isDatePikerShown ? (
+            // <CSSTransition timeout={300} classNames={{ ...s }}>
             <CustomDayPicker
               selected={date}
               className={s.customDatePicker}
               onSelect={handleDateChange}
             />
-          ) : null}
+          ) : // </CSSTransition>
+          null}
 
           <button className={s.soundBtn}>
             <Icon iconId="sound-on-off-icon" width={38} height={27} />

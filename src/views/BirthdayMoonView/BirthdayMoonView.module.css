@@ -5,12 +5,14 @@
 }
 
 .moonAndTitleWrapper {
+  height: 300px;
   transition: filter 50ms linear;
 }
 
 .moonAndTitleWrapperBlur {
+  height: 300px;
   transition: filter 50ms linear;
-  filter: blur(10px);
+  filter: blur(50px);
 }
 
 .pageTitle {
@@ -20,4 +22,10 @@
   font-size: 36px;
   line-height: 1.22;
   text-align: center;
+}
+
+.infoWrapper {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
 }

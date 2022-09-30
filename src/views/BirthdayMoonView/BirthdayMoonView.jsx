@@ -1,4 +1,5 @@
 import BirthdateInfo from 'components/BirthdateInfo';
+
 import BirthdateMoonControls from 'components/BirthdateMoonControls';
 import moment from 'moment/moment';
 import { useEffect, useState } from 'react';
@@ -39,12 +40,14 @@ export default function BirthdayMoonView() {
           <Video />
         </div>
 
-        <BirthdateMoonControls
-          formattedBirthDate={formattedBirthDate}
-          isDatePikerShown={isDatePikerShown}
-          setIsDatePikerShown={setIsDatePikerShown}
-        />
-        <BirthdateInfo moonPhase={moonPhase} />
+        <div className={s.infoWrapper}>
+          <BirthdateMoonControls
+            formattedBirthDate={formattedBirthDate}
+            isDatePikerShown={isDatePikerShown}
+            setIsDatePikerShown={setIsDatePikerShown}
+          />
+          <BirthdateInfo moonPhase={moonPhase} />
+        </div>
       </div>
     </>
   );

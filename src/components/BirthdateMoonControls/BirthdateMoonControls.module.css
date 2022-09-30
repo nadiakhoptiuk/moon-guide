@@ -72,10 +72,32 @@
 }
 
 .customDatePicker {
-  width: 350px;
+  width: 320px;
   position: absolute;
   right: 0;
-  top: -350px;
+  top: -310px;
+}
+
+.customDatePickerEnter {
+  composes: customDatePicker;
+  opacity: 1;
+}
+
+.customDatePickerEnterActive {
+  composes: customDatePicker;
+  opacity: 0;
+  transition: opacity 3000ms ease-in-out;
+}
+
+.customDatePickerExit {
+  composes: customDatePicker;
+  opacity: 0;
+}
+
+.customDatePickerExitActive {
+  composes: customDatePicker;
+  opacity: 1;
+  transition: opacity 3000ms ease-in-out;
 }
 
 .soundBtn {
