@@ -74,14 +74,14 @@
 }
 
 .rdp-nav {
-  flex-grow: 1;
+  width: 200%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  flex-grow: 0;
 }
 
-.rdp-nav__button_previous {
-  position: absolute;
-  left: 0;
+.rdp-nav_button {
+  width: 60px !important;
 }
 
 .rdp-day_selected,

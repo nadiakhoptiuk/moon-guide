@@ -1,7 +1,7 @@
 import CustomDayPicker from 'components/CustomDayPicker';
 import Icon from 'components/Icon';
 import moment from 'moment';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setBirthDate } from 'redux/birthDateReducer/birthDateSlice';
 // import { setBirthDate } from 'redux/birthDateReducer/birthDateSlice';
@@ -14,15 +14,17 @@ export default function BirthdateMoonControls({
   setIsDatePikerShown,
 }) {
   const userBirthDate = useSelector(birthDateSelector);
-  // const [selectedDay, setSelectedDay] = useState(< Date | undefined > today);
-  const [date, setDate] = useState(new Date());
+  const [date, setDate] = useState(userBirthDate || new Date());
   const dispatch = useDispatch();
 
   function handleDateChange(date) {
     setDate(date);
     setIsDatePikerShown(false);
   }
-  // console.log(date);
+
+  function toggleDatePickerShow() {
+    isDatePikerShown ? setIsDatePikerShown(false) : setIsDatePikerShown(true);
+  }
 
   useEffect(() => {
     const formattedDay = moment(date).format('YYYY-MM-DD');
@@ -40,7 +42,7 @@ export default function BirthdateMoonControls({
             name="date"
             className={s.datePicker}
             readOnly
-            onClick={() => setIsDatePikerShown(true)}
+            onClick={toggleDatePickerShow}
           />
 
           <Icon
@@ -48,7 +50,7 @@ export default function BirthdateMoonControls({
             width={38}
             height={36}
             className={s.datePickerIcon}
-            onClick={() => setIsDatePikerShown(true)}
+            onClick={toggleDatePickerShow}
           />
 
           {isDatePikerShown ? (

@@ -4,7 +4,12 @@
   overflow: hidden;
 }
 
+.moonAndTitleWrapper {
+  transition: filter 50ms linear;
+}
+
 .moonAndTitleWrapperBlur {
+  transition: filter 50ms linear;
   filter: blur(10px);
 }
 

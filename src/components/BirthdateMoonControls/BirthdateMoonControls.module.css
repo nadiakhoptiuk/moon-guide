@@ -72,9 +72,10 @@
 }
 
 .customDatePicker {
+  width: 350px;
   position: absolute;
   right: 0;
-  top: -310px;
+  top: -350px;
 }
 
 .soundBtn {
