@@ -1,3 +1,4 @@
+// import Audio from 'components/Audio';
 import CustomDayPicker from 'components/CustomDayPicker';
 import Icon from 'components/Icon';
 import moment from 'moment';
@@ -33,36 +34,66 @@ export default function BirthdateMoonControls({
 
   return (
     <>
-      <div className={s.dateWrapper}>
-        <p className={s.birthdate}>{formattedBirthDate}</p>
+      <div className={s.leftPanelWrapper}>
+        <div className={s.dateWrapper}>
+          <p className={s.birthdate}>{formattedBirthDate}</p>
 
-        <div className={s.btnWrapper}>
-          <input
-            type="date"
-            name="date"
-            className={s.datePicker}
-            readOnly
-            onClick={toggleDatePickerShow}
+          <div className={s.btnWrapper}>
+            <input
+              type="date"
+              name="date"
+              className={s.datePicker}
+              readOnly
+              onClick={toggleDatePickerShow}
+            />
+            <Icon
+              iconId="picker-white-icon"
+              width={38}
+              height={36}
+              className={s.datePickerIcon}
+              onClick={toggleDatePickerShow}
+            />
+            {isDatePikerShown ? (
+              <CustomDayPicker
+                selected={date}
+                className={s.customDatePicker}
+                onSelect={handleDateChange}
+              />
+            ) : null}
+
+            {/* <audio controls src="./fiolet-ridna.mp3">
+            <a href="./fiolet-ridna.mp3">Download audio</a>
+          </audio> */}
+
+            <button className={s.soundBtnMob}>
+              <Icon iconId="sound-on-off-icon" width={38} height={27} />
+            </button>
+          </div>
+        </div>
+
+        <div className={s.audioControlsWrapper}>
+          <Icon
+            iconId="audio-line-icon"
+            width={285}
+            height={1}
+            className={s.lineIcon}
           />
 
           <Icon
-            iconId="picker-white-icon"
-            width={38}
-            height={36}
-            className={s.datePickerIcon}
-            onClick={toggleDatePickerShow}
+            iconId="audio-point-icon"
+            width={20}
+            height={20}
+            className={s.pointIcon}
           />
+        </div>
 
-          {isDatePikerShown ? (
-            <CustomDayPicker
-              selected={date}
-              className={s.customDatePicker}
-              onSelect={handleDateChange}
-            />
-          ) : null}
-
-          <button className={s.soundBtn}>
+        <div className={s.playerControls}>
+          <button className={s.soundBtnDesktop}>
             <Icon iconId="sound-on-off-icon" width={38} height={27} />
+          </button>
+
+          <button className={s.pauseBtn}>
+            <Icon iconId="pause-icon" width={52} height={28} />
           </button>
         </div>
       </div>

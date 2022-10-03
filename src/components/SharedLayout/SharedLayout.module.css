@@ -13,6 +13,10 @@
   background-image: var(--background-primary);
 }
 
+.navIcon {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .mainNav {
     display: flex;
@@ -36,6 +40,7 @@
   }
 
   .navIcon {
+    display: block;
     margin-bottom: 10px;
     fill: currentColor;
     stroke: currentColor;

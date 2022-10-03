@@ -75,7 +75,7 @@
   width: 320px;
   position: absolute;
   right: 0;
-  top: -310px;
+  top: -345px;
 }
 
 .customDatePickerEnter {
@@ -100,12 +100,45 @@
   transition: opacity 3000ms ease-in-out;
 }
 
-.soundBtn {
+audio {
+  display: none;
+  width: 285px;
+}
+
+.soundBtnMob {
+  display: block;
   width: 50px;
   height: 40px;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.pauseBtn {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.soundBtnDesktop {
+  display: none;
+}
+
+.lineIcon {
+  display: none;
+}
+
+.pointIcon {
+  display: none;
+}
+
+.pauseBtn {
+  display: none;
+}
+
+.audioControlsWrapper {
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -117,5 +150,119 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+  }
+
+  .dateWrapper::after {
+    display: none;
+  }
+
+  .customDatePicker {
+    width: 320px;
+    position: absolute;
+    right: 0;
+    top: -342px;
+  }
+
+  audio {
+    display: block;
+    width: 285px;
+  }
+
+  audio::-webkit-media-controls-enclosure {
+    opacity: 0.5;
+  }
+
+  audio::-webkit-media-controls-timeline,
+  video::-webkit-media-controls-timeline,
+  audio::-webkit-media-controls-volume-slider {
+    display: none;
+  }
+
+  audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+  }
+  audio::-webkit-media-controls-current-time-display {
+    display: none;
+  }
+
+  audio::-webkit-media-controls-timeline-container,
+  video::-webkit-media-controls-timeline-container {
+    -webkit-appearance: media-controls-background;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-justify-content: flex-end;
+    -webkit-flex: 1 1;
+    -webkit-user-select: none;
+    height: 16px;
+    min-width: 0;
+  }
+
+  .leftPanelWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dateWrapper {
+    position: absolute;
+    top: 0;
+  }
+
+  .audioControlsWrapper {
+    display: block;
+    position: absolute;
+    top: 70px;
+  }
+
+  .pointIcon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -5px;
+  }
+
+  .soundBtnMob {
+    display: none;
+  }
+
+  .playerControls {
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pauseBtn {
+    display: block;
+    position: static;
+  }
+
+  .soundBtnDesktop {
+    display: block;
+    width: 50px;
+    height: 40px;
+    position: static;
+    margin-right: 61px;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .lineIcon {
+    display: block;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+  }
+
+  .lineIcon {
+    display: block;
+  }
+
+  .customDatePicker {
+    top: -360px;
   }
 }

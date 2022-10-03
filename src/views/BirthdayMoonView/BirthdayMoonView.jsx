@@ -40,14 +40,16 @@ export default function BirthdayMoonView() {
         </div>
 
         <div className={s.infoWrapper}>
-          <div className={s.videoWrapper}>
-            <Video />
+          <div className={s.leftPanelDesktop}>
+            <div className={s.videoWrapper}>
+              <Video />
+            </div>
+            <BirthdateMoonControls
+              formattedBirthDate={formattedBirthDate}
+              isDatePikerShown={isDatePikerShown}
+              setIsDatePikerShown={setIsDatePikerShown}
+            />
           </div>
-          <BirthdateMoonControls
-            formattedBirthDate={formattedBirthDate}
-            isDatePikerShown={isDatePikerShown}
-            setIsDatePikerShown={setIsDatePikerShown}
-          />
           <BirthdateInfo moonPhase={moonPhase} />
         </div>
       </div>
