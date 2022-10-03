@@ -30,7 +30,7 @@
 
 @media screen and (min-width: 1024px) {
   .birthdateInfo {
-    height: calc(100vh - 380px);
+    height: calc(100vh - 340px);
     padding-left: 20px;
     margin: 0 auto;
     overflow-y: scroll;

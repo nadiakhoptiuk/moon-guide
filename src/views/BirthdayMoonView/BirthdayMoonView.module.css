@@ -41,13 +41,13 @@
 
   .moonAndTitleWrapper {
     height: auto;
-    padding: 51px 0;
+    padding: 5vh 0;
     /* transition: filter 50ms linear; */
   }
 
   .moonAndTitleWrapperBlur {
     height: auto;
-    padding: 51px 0;
+    padding: 5vh 0;
 
     transition: filter 50ms linear;
     filter: blur(50px);
