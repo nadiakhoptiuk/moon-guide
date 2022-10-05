@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/moon-guide/static/css/main.b2749798.css",
-    "main.js": "/moon-guide/static/js/main.fa0da759.js",
-    "static/media/moon.mov": "/moon-guide/static/media/moon.484073eb454112d266a9.mov",
+    "main.css": "/moon-guide/static/css/main.8a37b2cb.css",
+    "main.js": "/moon-guide/static/js/main.1cf196ab.js",
     "static/media/bg-desktop@3x.jpg": "/moon-guide/static/media/bg-desktop@3x.6b26a7db11876f825465.jpg",
     "static/media/moon1.webm": "/moon-guide/static/media/moon1.d0d7af6168dd91606526.webm",
     "static/media/bg-desktop@2x.jpg": "/moon-guide/static/media/bg-desktop@2x.ce18b28d01d714805d78.jpg",
     "static/media/bg-desktop.jpg": "/moon-guide/static/media/bg-desktop.da2fe41fc73f337427fb.jpg",
+    "static/media/moon.mp4": "/moon-guide/static/media/moon.b3cce791f22c4ea65fa5.mp4",
     "static/media/bg-mobile@3x.jpg": "/moon-guide/static/media/bg-mobile@3x.12ffabd88e86abda7f4d.jpg",
     "static/media/bg-mobile@2x.jpg": "/moon-guide/static/media/bg-mobile@2x.ec9ac30899d5e1a20a6d.jpg",
     "static/media/bg-mobile.jpg": "/moon-guide/static/media/bg-mobile.37a50c6a3572b86739a2.jpg",
     "static/media/bg-shared-layout.jpg": "/moon-guide/static/media/bg-shared-layout.5c3fa4dbb8d1a212db0e.jpg",
-    "static/media/sprite.svg": "/moon-guide/static/media/sprite.096adb9e5ee323505897a47c3c9ea5f8.svg",
+    "static/media/sprite.svg": "/moon-guide/static/media/sprite.2a05920c2f00d33217de0c097e138c2f.svg",
     "index.html": "/moon-guide/index.html",
-    "main.b2749798.css.map": "/moon-guide/static/css/main.b2749798.css.map",
-    "main.fa0da759.js.map": "/moon-guide/static/js/main.fa0da759.js.map"
+    "main.8a37b2cb.css.map": "/moon-guide/static/css/main.8a37b2cb.css.map",
+    "main.1cf196ab.js.map": "/moon-guide/static/js/main.1cf196ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2749798.css",
-    "static/js/main.fa0da759.js"
+    "static/css/main.8a37b2cb.css",
+    "static/js/main.1cf196ab.js"
   ]
 }
