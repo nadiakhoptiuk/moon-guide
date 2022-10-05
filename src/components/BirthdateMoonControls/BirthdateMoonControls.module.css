@@ -32,7 +32,7 @@
 
 .datePicker {
   position: relative;
-  width: 50px;
+  width: 40px;
   height: 40px;
   margin-right: 20px;
   z-index: 2;
@@ -62,7 +62,7 @@
 
 .datePickerIcon {
   position: absolute;
-  left: 10px;
+  left: 0px;
   z-index: 0;
   cursor: pointer;
 }

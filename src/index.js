@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       {/* <HashRouter> */}
-      <BrowserRouter basename="/moon-guide">
+      <BrowserRouter basename="/moon-guide/">
         <App />
       </BrowserRouter>
       {/* </HashRouter> */}

@@ -68,7 +68,7 @@ export default function BirthdateMoonControls({
 
             {/* <audio controls src="./fiolet-ridna.mp3">
             <a href="./fiolet-ridna.mp3">Download audio</a>
-          </audio> */}
+            </audio> */}
 
             <button className={s.soundBtnMob} onClick={toggleSound}>
               {isSoundOn ? (

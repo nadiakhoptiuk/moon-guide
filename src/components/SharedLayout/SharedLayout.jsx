@@ -19,6 +19,7 @@ export default function SharedLayout() {
               <li className={s.mainNavItem}>
                 <NavLink
                   to={routes.home}
+                  end
                   className={({ isActive }) => {
                     return isActive ? 'activeNavLink' : 'navLink';
                   }}

@@ -1,0 +1,24 @@
+.moonOnlineSection {
+  padding: 28px 0 27px 0;
+}
+.moonPhase {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  text-transform: capitalize;
+  color: var(--main-text-color);
+}
+
+.energyDescWrap {
+  display: flex;
+}
+
+.energyDesc {
+  width: 200px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--main-text-color);
+}

@@ -1,0 +1,96 @@
+.dateWrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dateWrapper::after {
+  position: absolute;
+  bottom: -4px;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.date {
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--main-text-color);
+  font-weight: 400;
+}
+
+.datePicker {
+  position: relative;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: transparent;
+  z-index: 1;
+}
+
+.datePicker:hover:not([disabled]) {
+  background-color: transparent;
+}
+
+.datePicker:focus,
+.datePicker:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+.datePicker[type='date']::-webkit-inner-spin-button,
+.datePicker[type='date']::-webkit-calendar-picker-indicator {
+  width: 50px;
+  opacity: 0;
+  -webkit-appearance: none;
+}
+
+.datePickerIcon {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.datePickerIcon:hover {
+  cursor: pointer;
+}
+
+.customDatePicker {
+  width: 320px;
+  position: absolute;
+  right: 50%;
+  top: 70px;
+  transform: translate(50%);
+}
+
+/* .customDatePickerEnter {
+  composes: customDatePicker;
+  opacity: 1;
+}
+
+.customDatePickerEnterActive {
+  composes: customDatePicker;
+  opacity: 0;
+  transition: opacity 3000ms ease-in-out;
+}
+
+.customDatePickerExit {
+  composes: customDatePicker;
+  opacity: 0;
+}
+
+.customDatePickerExitActive {
+  composes: customDatePicker;
+  opacity: 1;
+  transition: opacity 3000ms ease-in-out;
+} */
