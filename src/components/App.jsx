@@ -8,12 +8,12 @@ import SharedLayout from './SharedLayout';
 export const App = () => {
   return (
     <Routes>
-      <Route path="/welcome" element={<WelcomeView />} />
       <Route path="/" element={<SharedLayout />}>
         <Route index element={<BirthdayMoonView />} />
         <Route path="/moon_online" element={<MoonOnlineView />} />
         {/* <Route path="/your_ritual" element={< />} /> */}
       </Route>
+      <Route path="/welcome" element={<WelcomeView />} />
     </Routes>
   );
 };
