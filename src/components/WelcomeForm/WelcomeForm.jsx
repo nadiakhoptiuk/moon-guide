@@ -6,15 +6,6 @@ import s from './WelcomeForm.module.css';
 export default function Form() {
   // const { name, setName } = useFormFields('');
   // const { birthdate, setBirthdate } = useFormFields('');
-  const screen = window.innerWidth;
-
-  const iconStyle = {
-    fill: 'rgba(0, 0, 0, 0.7)',
-    position: 'absolute',
-    left: '16px',
-    top: '50%',
-    transform: 'translateY(-50%)',
-  };
 
   return (
     <form className={s.form}>
@@ -29,12 +20,7 @@ export default function Form() {
           // onChange={setName}
           readOnly
         />
-        <Icon
-          iconId="user-icon"
-          width={screen >= 1024 ? 28 : 17}
-          height={screen >= 1024 ? 26 : 18}
-          style={iconStyle}
-        />
+        <Icon iconId="user-icon" className={s.userIcon} />
       </label>
 
       <label className={s.label}>
@@ -49,13 +35,7 @@ export default function Form() {
           readOnly
         />
 
-        <Icon
-          iconId="picker-icon"
-          width={screen >= 1024 ? 30 : 18}
-          height={screen >= 1024 ? 28 : 17}
-          className={s.icon}
-          style={iconStyle}
-        />
+        <Icon iconId="picker-icon" className={s.datePickerIcon} />
       </label>
     </form>
   );

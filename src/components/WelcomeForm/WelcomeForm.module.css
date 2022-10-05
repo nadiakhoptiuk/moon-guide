@@ -7,33 +7,24 @@
   flex-direction: column;
 }
 
-@media screen and (min-width: 1024px) {
-  .form {
-    padding: 0;
-    width: 386px;
-    margin-bottom: 5vh;
-  }
+.icon {
+  fill: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.input {
-  width: 100%;
-  height: 44px;
-  padding: 12px 13px 13px 41px;
-  font-family: inherit;
-  background-color: var(--background-for-input);
-  color: var(--secondary-text-color);
-  cursor: pointer;
-  border-radius: 8px;
-  border: none;
+.userIcon {
+  composes: icon;
+  width: 17px;
+  height: 18px;
 }
 
-@media screen and (min-width: 1024px) {
-  .input {
-    height: 56px;
-    padding: 16px 16px 16px 81px;
-    font-size: 20px;
-    line-height: 1.15;
-  }
+.datePickerIcon {
+  composes: icon;
+  width: 18px;
+  height: 17px;
 }
 
 .input[type='date']::-webkit-inner-spin-button,
@@ -65,4 +56,51 @@
 
 .react-date-picker__wrapper {
   border: none !important;
+}
+
+.input {
+  width: 100%;
+  height: 44px;
+  padding: 12px 13px 13px 41px;
+  font-family: inherit;
+  background-color: var(--background-for-input);
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .form {
+    padding: 0;
+    width: 386px;
+    margin-bottom: 5vh;
+  }
+
+  .input {
+    height: 56px;
+    padding: 16px 16px 16px 81px;
+    font-size: 20px;
+    line-height: 1.15;
+  }
+
+  .icon {
+    fill: rgba(0, 0, 0, 0.7);
+    position: 'absolute';
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .datePickerIcon {
+    composes: icon;
+    width: 30px;
+    height: 28px;
+  }
+
+  .userIcon {
+    composes: icon;
+    width: 28px;
+    height: 26px;
+  }
 }

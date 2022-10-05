@@ -13,6 +13,7 @@ export default function BirthdayMoonView() {
   const [formattedBirthDate, setFormattedBirthDate] = useState('');
   const [moonPhase, setMoonPhase] = useState('');
   const [isDatePikerShown, setIsDatePikerShown] = useState(false);
+
   const userBirthDate = useSelector(birthDateSelector);
 
   useEffect(() => {

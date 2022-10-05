@@ -1,1 +1,1 @@
-export { default } from './BirthdateInfo';
+export { default } from './BirthdateInfo.jsx';

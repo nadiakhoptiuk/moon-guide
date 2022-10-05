@@ -16,6 +16,7 @@ export default function BirthdateMoonControls({
 }) {
   const userBirthDate = useSelector(birthDateSelector);
   const [date, setDate] = useState(userBirthDate || new Date());
+  const [isSoundOn, setIsSoundOn] = useState(true);
   const dispatch = useDispatch();
 
   function handleDateChange(date) {
@@ -31,6 +32,10 @@ export default function BirthdateMoonControls({
     const formattedDay = moment(date).format('YYYY-MM-DD');
     dispatch(setBirthDate(formattedDay));
   }, [dispatch, date]);
+
+  function toggleSound() {
+    isSoundOn ? setIsSoundOn(false) : setIsSoundOn(true);
+  }
 
   return (
     <>
@@ -65,8 +70,12 @@ export default function BirthdateMoonControls({
             <a href="./fiolet-ridna.mp3">Download audio</a>
           </audio> */}
 
-            <button className={s.soundBtnMob}>
-              <Icon iconId="sound-on-off-icon" width={38} height={27} />
+            <button className={s.soundBtnMob} onClick={toggleSound}>
+              {isSoundOn ? (
+                <Icon iconId="sound-on-icon" width={38} height={27} />
+              ) : (
+                <Icon iconId="sound-off-icon" width={27} height={27} />
+              )}
             </button>
           </div>
         </div>
@@ -88,8 +97,12 @@ export default function BirthdateMoonControls({
         </div>
 
         <div className={s.playerControls}>
-          <button className={s.soundBtnDesktop}>
-            <Icon iconId="sound-on-off-icon" width={38} height={27} />
+          <button className={s.soundBtnDesktop} onClick={toggleSound}>
+            {isSoundOn ? (
+              <Icon iconId="sound-on-icon" width={38} height={27} />
+            ) : (
+              <Icon iconId="sound-off-icon" width={27} height={27} />
+            )}
           </button>
 
           <button className={s.pauseBtn}>
