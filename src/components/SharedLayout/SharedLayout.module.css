@@ -23,7 +23,6 @@
     justify-content: space-evenly;
     padding: 7px 0;
     width: 834px;
-    height: 144px;
     margin: 0 auto;
 
     position: absolute;
@@ -39,8 +38,14 @@
     backdrop-filter: blur(7.5px);
   }
 
+  .mainNavItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .navIcon {
-    display: block;
+    display: none;
     margin-bottom: 10px;
     fill: currentColor;
     stroke: currentColor;

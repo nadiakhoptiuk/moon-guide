@@ -1,13 +1,12 @@
-import video1 from '../../video/moon1.webm';
-import video from '../../video/moon.mp4';
-import s from './Video.module.css';
+import video1 from 'video/moon1.webm';
+import video from 'video/moon2.mov';
 
-export default function Video() {
+export default function Video({ className }) {
   return (
     <>
-      <video autoPlay muted loop className={s.video}>
+      <video autoPlay muted loop className={className} playsinline>
+        <source src={video} type="video/quicktime" />
         <source src={video1} type="video/webm" />
-        <source src={video} type="video/mp4" />
       </video>
     </>
   );

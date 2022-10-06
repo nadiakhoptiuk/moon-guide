@@ -43,7 +43,7 @@ export default function BirthdayMoonView() {
         <div className={s.infoWrapper}>
           <div className={s.leftPanelDesktop}>
             <div className={s.videoWrapper}>
-              <Video />
+              <Video className={s.video} />
             </div>
             <BirthdateMoonControls
               formattedBirthDate={formattedBirthDate}

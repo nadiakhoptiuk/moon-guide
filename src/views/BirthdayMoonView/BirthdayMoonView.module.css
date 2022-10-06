@@ -24,6 +24,18 @@
   text-align: center;
 }
 
+.video {
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  transform: translate(-50%, 0);
+
+  display: block;
+  width: 350px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
 .leftPanelDesktop {
   margin-top: 15px;
 }
@@ -67,6 +79,12 @@
     flex-shrink: 0;
     float: right;
     margin-right: 15px;
+  }
+
+  .video {
+    position: absolute;
+    top: -25%;
+    left: 50%;
   }
 
   .leftPanelDesktop {
