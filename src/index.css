@@ -66,65 +66,6 @@ body {
   padding: 0 20px;
 }
 
-.navLinkMain {
-  position: relative;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.21;
-  color: var(--main-text-color);
-}
-
-.navLinkEnter {
-  composes: navLinkMain;
-  position: relative;
-  color: var(--main-text-color);
-}
-
-.navLinkEnterActive {
-  composes: navLinkMain;
-  position: relative;
-  color: var(--main-text-color-nav);
-  transition: all 300ms ease-in-out;
-}
-
-.navLinkExit {
-  composes: navLinkMain;
-  position: relative;
-  color: var(--main-text-color-nav);
-}
-
-.navLinkExitActive {
-  composes: navLinkMain;
-  position: relative;
-  color: var(--main-text-color);
-  transition: all 300ms ease-in-out;
-}
-
-.navLinkEnterActive::after {
-  position: absolute;
-  left: 0;
-  top: 20px;
-  content: '';
-  width: 0;
-  height: 0;
-  background-color: transparent;
-
-  transition: all 300ms ease-in-out;
-}
-
-.navLinkExitActive::after {
-  position: absolute;
-  left: 0;
-  top: 20px;
-  content: '';
-  width: 100%;
-  height: 1px;
-  background-color: var(--main-text-color);
-
-  transition: all 300ms ease-in-out;
-}
-
 @media screen and (min-width: 1024px) {
   .page-wrapper {
     position: relative;
@@ -141,43 +82,5 @@ body {
       linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
       url('../src/images/bg-desktop.jpg');
     /* filter: blur(2.5px); */
-  }
-
-  .navLink {
-    max-width: 210px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 50px;
-
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.25;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--main-text-color);
-  }
-
-  .activeNavLink {
-    max-width: 216px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 50px;
-
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--rdp-accent-color-custom);
-  }
-
-  .activeNavLink::after {
-    display: none;
   }
 }

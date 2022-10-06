@@ -24,8 +24,8 @@ export default function SharedLayout() {
                     end
                     className={({ isActive }) => {
                       return isActive
-                        ? 'navLinkExitActive'
-                        : 'navLinkEnterActive';
+                        ? `${s.navLinkExitActive}`
+                        : `${s.navLinkEnterActive}`;
                     }}
                   >
                     <Icon
@@ -44,8 +44,8 @@ export default function SharedLayout() {
                   to={routes.lunar}
                   className={({ isActive }) => {
                     return isActive
-                      ? 'navLinkExitActive'
-                      : 'navLinkEnterActive';
+                      ? `${s.navLinkExitActive}`
+                      : `${s.navLinkEnterActive}`;
                   }}
                 >
                   <Icon
@@ -63,8 +63,8 @@ export default function SharedLayout() {
                   to={routes.ritual}
                   className={({ isActive }) => {
                     return isActive
-                      ? 'navLinkExitActive'
-                      : 'navLinkEnterActive';
+                      ? `${s.navLinkExitActive}`
+                      : `${s.navLinkEnterActive}`;
                   }}
                 >
                   <Icon
