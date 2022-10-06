@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/moon-guide/static/css/main.f088cc95.css",
-    "main.js": "/moon-guide/static/js/main.d5b8284a.js",
+    "main.css": "/moon-guide/static/css/main.f0f213a1.css",
+    "main.js": "/moon-guide/static/js/main.19a6a060.js",
     "static/media/moon2.mov": "/moon-guide/static/media/moon2.484073eb454112d266a9.mov",
     "static/media/bg-desktop@3x.jpg": "/moon-guide/static/media/bg-desktop@3x.6b26a7db11876f825465.jpg",
     "static/media/moon1.webm": "/moon-guide/static/media/moon1.d0d7af6168dd91606526.webm",
@@ -13,11 +13,11 @@
     "static/media/bg-shared-layout.jpg": "/moon-guide/static/media/bg-shared-layout.5c3fa4dbb8d1a212db0e.jpg",
     "static/media/sprite.svg": "/moon-guide/static/media/sprite.2a05920c2f00d33217de0c097e138c2f.svg",
     "index.html": "/moon-guide/index.html",
-    "main.f088cc95.css.map": "/moon-guide/static/css/main.f088cc95.css.map",
-    "main.d5b8284a.js.map": "/moon-guide/static/js/main.d5b8284a.js.map"
+    "main.f0f213a1.css.map": "/moon-guide/static/css/main.f0f213a1.css.map",
+    "main.19a6a060.js.map": "/moon-guide/static/js/main.19a6a060.js.map"
   },
   "entrypoints": [
-    "static/css/main.f088cc95.css",
-    "static/js/main.d5b8284a.js"
+    "static/css/main.f0f213a1.css",
+    "static/js/main.19a6a060.js"
   ]
 }
