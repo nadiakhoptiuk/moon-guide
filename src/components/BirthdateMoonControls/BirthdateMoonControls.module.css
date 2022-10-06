@@ -229,7 +229,7 @@ audio {
   .playerControls {
     position: absolute;
     width: 100%;
-    top: 110px;
+    top: 90px;
     display: flex;
     align-items: center;
     justify-content: center;

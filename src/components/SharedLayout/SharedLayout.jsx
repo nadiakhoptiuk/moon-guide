@@ -1,6 +1,7 @@
 import Icon from 'components/Icon';
 import Logo from 'components/Logo';
 import { NavLink, Outlet } from 'react-router-dom';
+import { CSSTransition } from 'react-transition-group';
 import routes from '../../utils/routes';
 import s from './SharedLayout.module.css';
 
@@ -17,28 +18,34 @@ export default function SharedLayout() {
           <nav>
             <ul className={s.mainNav}>
               <li className={s.mainNavItem}>
-                <NavLink
-                  to={routes.home}
-                  end
-                  className={({ isActive }) => {
-                    return isActive ? 'activeNavLink' : 'navLink';
-                  }}
-                >
-                  <Icon
-                    iconId="birth-moon-icon"
-                    width={53}
-                    height={53}
-                    className={s.navIcon}
-                  />
-                  Birthday Moon
-                </NavLink>
+                <CSSTransition timeout={300} classNames="navLink">
+                  <NavLink
+                    to={routes.home}
+                    end
+                    className={({ isActive }) => {
+                      return isActive
+                        ? 'navLinkExitActive'
+                        : 'navLinkEnterActive';
+                    }}
+                  >
+                    <Icon
+                      iconId="birth-moon-icon"
+                      width={53}
+                      height={53}
+                      className={s.navIcon}
+                    />
+                    Birthday Moon
+                  </NavLink>
+                </CSSTransition>
               </li>
 
               <li className={s.mainNavItem}>
                 <NavLink
                   to={routes.lunar}
                   className={({ isActive }) => {
-                    return isActive ? 'activeNavLink' : 'navLink';
+                    return isActive
+                      ? 'navLinkExitActive'
+                      : 'navLinkEnterActive';
                   }}
                 >
                   <Icon
@@ -55,7 +62,9 @@ export default function SharedLayout() {
                 <NavLink
                   to={routes.ritual}
                   className={({ isActive }) => {
-                    return isActive ? 'activeNavLink' : 'navLink';
+                    return isActive
+                      ? 'navLinkExitActive'
+                      : 'navLinkEnterActive';
                   }}
                 >
                   <Icon
