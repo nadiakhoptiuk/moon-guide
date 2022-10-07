@@ -45,7 +45,7 @@ export default function BirthdateMoonControls({
 
           <div className={s.btnWrapper}>
             <input
-              type="date"
+              type="text"
               name="date"
               className={s.datePicker}
               readOnly

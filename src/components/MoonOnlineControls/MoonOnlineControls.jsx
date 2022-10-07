@@ -49,7 +49,7 @@ export default function MoonOnlineControls({
 
       <div className={s.btnWrapper}>
         <input
-          type="date"
+          type="text"
           name="date"
           className={s.datePicker}
           readOnly
