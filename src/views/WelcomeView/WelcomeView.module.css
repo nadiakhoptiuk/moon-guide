@@ -26,6 +26,12 @@
   }
 }
 
+.startIcon {
+  width: 20px;
+  height: 16px;
+  margin-left: 11px;
+}
+
 @media screen and (min-width: 1024px) {
   .section {
     padding: 4vh 0;
@@ -68,6 +74,12 @@
     flex-direction: column;
     justify-content: space-between;
   }
+}
+
+.startIcon {
+  width: 36px;
+  height: 29px;
+  margin-left: 24px;
 }
 
 .welcomeText {

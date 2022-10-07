@@ -11,8 +11,8 @@ export default function Icon({ iconId, width, height, style, className }) {
 
 Icon.propTypes = {
   iconId: PropTypes.string.isRequired,
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired,
+  width: PropTypes.number,
+  height: PropTypes.number,
   style: PropTypes.object,
   className: PropTypes.string,
 };
