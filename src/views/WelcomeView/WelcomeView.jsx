@@ -8,11 +8,13 @@ import StarsContainer from 'components/StarsContainer';
 // import { PulsedDiv } from 'utils/PulsedDiv';
 
 export default function WelcomeView() {
-  // const screen = window.innerWidth;
-
   return (
     <section className={s.section}>
       <StarsContainer />
+
+      <div className={s.bgWrapper}>
+        <div className={s.bgContainer}></div>
+      </div>
 
       <div className={s.container}>
         <Logo />
